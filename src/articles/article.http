@@ -1,0 +1,17 @@
+### List of articles
+GET http://localhost:3000/articles
+
+### List drafts
+GET http://localhost:3000/articles/findDrafts
+
+### Create article
+POST http://localhost:3000/articles
+Content-Type: application/json
+
+{
+  "title": "Let’s build a REST API with NestJS and Prisma.",
+  "description": "NestJS Series announcement.",
+  "body": "NestJS is one of the hottest Node.js frameworks around. In this series, you will learn how to build a backend REST API with NestJS, Prisma, PostgreSQL and Swagger.",
+  "published": true
+}
+
